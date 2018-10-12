@@ -3,8 +3,11 @@ import sys
 import urllib.error
 import urllib.request
 import enchant
+import nltk
 from nltk.tokenize import word_tokenize
 from six.moves.html_parser import HTMLParser
+
+nltk.download('punkt')
 
 h = HTMLParser()
 
